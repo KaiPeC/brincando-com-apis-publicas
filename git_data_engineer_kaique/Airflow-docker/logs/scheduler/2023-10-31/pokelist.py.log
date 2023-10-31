@@ -10358,3 +10358,31 @@
 [2023-10-31T12:29:39.560+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:29:39.560+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2023-10-31T12:29:39.587+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:29:39.587+0000] {dag.py:3722} INFO - Setting next_dagrun for simple to 2023-10-31T00:00:00+00:00, run_after=2023-11-01T00:00:00+00:00
 [2023-10-31T12:29:39.606+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pokelist.py took 0.091 seconds
+[2023-10-31T12:30:09.725+0000] {processor.py:157} INFO - Started process (PID=1664559) to work on /opt/airflow/dags/pokelist.py
+[2023-10-31T12:30:09.727+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pokelist.py for tasks to queue
+[2023-10-31T12:30:09.730+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:30:09.730+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:30:09.737+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple']) retrieved from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:30:09.767+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:30:09.767+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-31T12:30:09.799+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:30:09.799+0000] {dag.py:3722} INFO - Setting next_dagrun for simple to 2023-10-31T00:00:00+00:00, run_after=2023-11-01T00:00:00+00:00
+[2023-10-31T12:30:09.822+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pokelist.py took 0.104 seconds
+[2023-10-31T12:30:40.092+0000] {processor.py:157} INFO - Started process (PID=1664613) to work on /opt/airflow/dags/pokelist.py
+[2023-10-31T12:30:40.094+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pokelist.py for tasks to queue
+[2023-10-31T12:30:40.097+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:30:40.097+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:30:40.104+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple']) retrieved from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:30:40.129+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:30:40.129+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-31T12:30:40.157+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:30:40.156+0000] {dag.py:3722} INFO - Setting next_dagrun for simple to 2023-10-31T00:00:00+00:00, run_after=2023-11-01T00:00:00+00:00
+[2023-10-31T12:30:40.175+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pokelist.py took 0.090 seconds
+[2023-10-31T12:31:10.450+0000] {processor.py:157} INFO - Started process (PID=1664667) to work on /opt/airflow/dags/pokelist.py
+[2023-10-31T12:31:10.452+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pokelist.py for tasks to queue
+[2023-10-31T12:31:10.456+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:31:10.456+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:31:10.463+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple']) retrieved from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:31:10.496+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:31:10.496+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-31T12:31:10.527+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:31:10.527+0000] {dag.py:3722} INFO - Setting next_dagrun for simple to 2023-10-31T00:00:00+00:00, run_after=2023-11-01T00:00:00+00:00
+[2023-10-31T12:31:10.548+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pokelist.py took 0.105 seconds
+[2023-10-31T12:31:40.854+0000] {processor.py:157} INFO - Started process (PID=1664722) to work on /opt/airflow/dags/pokelist.py
+[2023-10-31T12:31:40.855+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/pokelist.py for tasks to queue
+[2023-10-31T12:31:40.860+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:31:40.859+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:31:40.866+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple']) retrieved from /opt/airflow/dags/pokelist.py
+[2023-10-31T12:31:40.892+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:31:40.892+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-31T12:31:40.924+0000] {logging_mixin.py:151} INFO - [2023-10-31T12:31:40.924+0000] {dag.py:3722} INFO - Setting next_dagrun for simple to 2023-10-31T00:00:00+00:00, run_after=2023-11-01T00:00:00+00:00
+[2023-10-31T12:31:40.943+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/pokelist.py took 0.096 seconds
