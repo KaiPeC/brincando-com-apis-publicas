@@ -116,6 +116,9 @@ services:
     command: webserver
     ports:
       - "8080:8080"
+    networks:
+      pub_net:
+        ipv4_address: 213.163.147.68
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://0.0.0.0:8080/health"]
       interval: 30s
