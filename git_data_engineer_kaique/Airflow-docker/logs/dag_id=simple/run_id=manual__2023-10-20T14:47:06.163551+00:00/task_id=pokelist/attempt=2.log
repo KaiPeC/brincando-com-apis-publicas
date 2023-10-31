@@ -1,0 +1,82 @@
+[2023-10-20T14:55:12.771+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-20T14:47:06.163551+00:00 [queued]>
+[2023-10-20T14:55:14.221+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-20T14:47:06.163551+00:00 [queued]>
+[2023-10-20T14:55:14.230+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-10-20T14:55:14.415+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): pokelist> on 2023-10-20 14:47:06.163551+00:00
+[2023-10-20T14:55:14.439+0000] {standard_task_runner.py:57} INFO - Started process 6442 to run task
+[2023-10-20T14:55:14.450+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'simple', 'pokelist', 'manual__2023-10-20T14:47:06.163551+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/pokelist.py', '--cfg-path', '/tmp/tmpuh_8fl9s']
+[2023-10-20T14:55:14.456+0000] {standard_task_runner.py:85} INFO - Job 90: Subtask pokelist
+[2023-10-20T14:55:15.529+0000] {task_command.py:416} INFO - Running <TaskInstance: simple.pokelist manual__2023-10-20T14:47:06.163551+00:00 [running]> on host 4662b0d5ca37
+[2023-10-20T14:55:17.376+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@***.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple' AIRFLOW_CTX_TASK_ID='pokelist' AIRFLOW_CTX_EXECUTION_DATE='2023-10-20T14:47:06.163551+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-20T14:47:06.163551+00:00'
+[2023-10-20T14:55:17.432+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-10-20T14:55:17.433+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python3 /opt/***/scripts/pokelist.py']
+[2023-10-20T14:55:17.648+0000] {subprocess.py:86} INFO - Output:
+[2023-10-20T14:55:39.359+0000] {subprocess.py:93} INFO - /home/***/.local/lib/python3.9/site-packages/pyspark/bin/load-spark-env.sh: line 68: ps: command not found
+[2023-10-20T14:57:38.811+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2023-10-20T14:57:38.817+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2023-10-20T14:57:42.202+0000] {subprocess.py:93} INFO - 23/10/20 14:57:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2023-10-20T14:57:49.059+0000] {subprocess.py:93} INFO - 23/10/20 14:57:49 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2023-10-20T14:57:49.085+0000] {subprocess.py:93} INFO - 23/10/20 14:57:49 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[2023-10-20T14:58:12.353+0000] {subprocess.py:93} INFO - A Requisição de nº 1 coletou 50 Pokemons
+[2023-10-20T14:58:12.362+0000] {subprocess.py:93} INFO - A Requisição de nº 2 coletou 50 Pokemons
+[2023-10-20T14:58:12.374+0000] {subprocess.py:93} INFO - A Requisição de nº 3 coletou 50 Pokemons
+[2023-10-20T14:58:12.378+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T14:58:12.378+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+[2023-10-20T14:58:12.379+0000] {subprocess.py:93} INFO -     conn = connection.create_connection(
+[2023-10-20T14:58:12.379+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/util/connection.py", line 72, in create_connection
+[2023-10-20T14:58:12.379+0000] {subprocess.py:93} INFO -     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+[2023-10-20T14:58:12.379+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.9/socket.py", line 954, in getaddrinfo
+[2023-10-20T14:58:12.379+0000] {subprocess.py:93} INFO -     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2023-10-20T14:58:12.379+0000] {subprocess.py:93} INFO - socket.gaierror: [Errno -3] Temporary failure in name resolution
+[2023-10-20T14:58:12.380+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:58:12.380+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2023-10-20T14:58:12.380+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:58:12.380+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T14:58:12.380+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+[2023-10-20T14:58:12.380+0000] {subprocess.py:93} INFO -     httplib_response = self._make_request(
+[2023-10-20T14:58:12.380+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 403, in _make_request
+[2023-10-20T14:58:12.397+0000] {subprocess.py:93} INFO -     self._validate_conn(conn)
+[2023-10-20T14:58:12.433+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1053, in _validate_conn
+[2023-10-20T14:58:12.441+0000] {subprocess.py:93} INFO -     conn.connect()
+[2023-10-20T14:58:12.441+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/connection.py", line 363, in connect
+[2023-10-20T14:58:12.513+0000] {subprocess.py:93} INFO -     self.sock = conn = self._new_conn()
+[2023-10-20T14:58:12.540+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+[2023-10-20T14:58:12.540+0000] {subprocess.py:93} INFO -     raise NewConnectionError(
+[2023-10-20T14:58:12.540+0000] {subprocess.py:93} INFO - urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd43ba42940>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+[2023-10-20T14:58:12.540+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:58:12.540+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2023-10-20T14:58:12.540+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:58:12.541+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T14:58:12.541+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+[2023-10-20T14:58:12.541+0000] {subprocess.py:93} INFO -     resp = conn.urlopen(
+[2023-10-20T14:58:12.541+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+[2023-10-20T14:58:12.541+0000] {subprocess.py:93} INFO -     retries = retries.increment(
+[2023-10-20T14:58:12.541+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
+[2023-10-20T14:58:12.553+0000] {subprocess.py:93} INFO -     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[2023-10-20T14:58:12.553+0000] {subprocess.py:93} INFO - urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='pokeapi.co', port=443): Max retries exceeded with url: /api/v2/pokemon/?offset=150&limit=50 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd43ba42940>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-10-20T14:58:12.553+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:58:12.553+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2023-10-20T14:58:12.553+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:58:12.553+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T14:58:12.553+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/pokelist.py", line 29, in <module>
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -     response = requests.get(url)
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/requests/api.py", line 73, in get
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -     return request("get", url, params=params, **kwargs)
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/requests/api.py", line 59, in request
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -     return session.request(method=method, url=url, **kwargs)
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -     resp = self.send(prep, **send_kwargs)
+[2023-10-20T14:58:12.554+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+[2023-10-20T14:58:12.555+0000] {subprocess.py:93} INFO -     r = adapter.send(request, **kwargs)
+[2023-10-20T14:58:12.555+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+[2023-10-20T14:58:12.555+0000] {subprocess.py:93} INFO -     raise ConnectionError(e, request=request)
+[2023-10-20T14:58:12.555+0000] {subprocess.py:93} INFO - requests.exceptions.ConnectionError: HTTPSConnectionPool(host='pokeapi.co', port=443): Max retries exceeded with url: /api/v2/pokemon/?offset=150&limit=50 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd43ba42940>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-10-20T14:58:14.856+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-10-20T14:58:14.891+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-10-20T14:58:14.919+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=simple, task_id=pokelist, execution_date=20231020T144706, start_date=20231020T145512, end_date=20231020T145814
+[2023-10-20T14:58:15.026+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 90 for task pokelist (Bash command failed. The command returned a non-zero exit code 1.; 6442)
+[2023-10-20T14:58:15.171+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-20T14:58:15.265+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

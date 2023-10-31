@@ -1,0 +1,85 @@
+[2023-10-20T14:46:38.289+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-20T14:46:35.213256+00:00 [queued]>
+[2023-10-20T14:46:38.300+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-20T14:46:35.213256+00:00 [queued]>
+[2023-10-20T14:46:38.301+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-10-20T14:46:38.319+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): pokelist> on 2023-10-20 14:46:35.213256+00:00
+[2023-10-20T14:46:38.330+0000] {standard_task_runner.py:57} INFO - Started process 2595 to run task
+[2023-10-20T14:46:38.340+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'simple', 'pokelist', 'manual__2023-10-20T14:46:35.213256+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/pokelist.py', '--cfg-path', '/tmp/tmpq3lce9uh']
+[2023-10-20T14:46:38.346+0000] {standard_task_runner.py:85} INFO - Job 64: Subtask pokelist
+[2023-10-20T14:46:38.465+0000] {task_command.py:416} INFO - Running <TaskInstance: simple.pokelist manual__2023-10-20T14:46:35.213256+00:00 [running]> on host 4662b0d5ca37
+[2023-10-20T14:46:38.691+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@***.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple' AIRFLOW_CTX_TASK_ID='pokelist' AIRFLOW_CTX_EXECUTION_DATE='2023-10-20T14:46:35.213256+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-20T14:46:35.213256+00:00'
+[2023-10-20T14:46:38.694+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-10-20T14:46:38.695+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python3 /opt/***/scripts/pokelist.py']
+[2023-10-20T14:46:38.729+0000] {subprocess.py:86} INFO - Output:
+[2023-10-20T14:46:40.786+0000] {subprocess.py:93} INFO - /home/***/.local/lib/python3.9/site-packages/pyspark/bin/load-spark-env.sh: line 68: ps: command not found
+[2023-10-20T14:46:47.970+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2023-10-20T14:46:47.971+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2023-10-20T14:46:48.718+0000] {subprocess.py:93} INFO - 23/10/20 14:46:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2023-10-20T14:46:51.309+0000] {subprocess.py:93} INFO - 23/10/20 14:46:51 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2023-10-20T14:46:51.316+0000] {subprocess.py:93} INFO - 23/10/20 14:46:51 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[2023-10-20T14:46:51.321+0000] {subprocess.py:93} INFO - 23/10/20 14:46:51 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[2023-10-20T14:46:51.329+0000] {subprocess.py:93} INFO - 23/10/20 14:46:51 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+[2023-10-20T14:46:51.331+0000] {subprocess.py:93} INFO - 23/10/20 14:46:51 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+[2023-10-20T14:48:58.579+0000] {subprocess.py:93} INFO - ERROR:root:Exception while sending command.
+[2023-10-20T14:48:58.590+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T14:48:58.590+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/py4j/clientserver.py", line 516, in send_command
+[2023-10-20T14:48:58.591+0000] {subprocess.py:93} INFO -     raise Py4JNetworkError("Answer from Java side is empty")
+[2023-10-20T14:48:58.591+0000] {subprocess.py:93} INFO - py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+[2023-10-20T14:48:58.591+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:48:58.591+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2023-10-20T14:48:58.591+0000] {subprocess.py:93} INFO - 
+[2023-10-20T14:48:58.592+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T14:48:58.595+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/py4j/java_gateway.py", line 1038, in send_command
+[2023-10-20T14:48:58.595+0000] {subprocess.py:93} INFO -     response = connection.send_command(command)
+[2023-10-20T14:48:58.595+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/py4j/clientserver.py", line 539, in send_command
+[2023-10-20T14:48:58.595+0000] {subprocess.py:93} INFO -     raise Py4JNetworkError(
+[2023-10-20T14:48:58.596+0000] {subprocess.py:93} INFO - py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2023-10-20T14:48:58.596+0000] {subprocess.py:93} INFO - A Requisição de nº 1 coletou 50 Pokemons
+[2023-10-20T14:48:58.596+0000] {subprocess.py:93} INFO - A Requisição de nº 2 coletou 50 Pokemons
+[2023-10-20T14:48:58.596+0000] {subprocess.py:93} INFO - A Requisição de nº 3 coletou 50 Pokemons
+[2023-10-20T14:48:58.596+0000] {subprocess.py:93} INFO - A Requisição de nº 4 coletou 50 Pokemons
+[2023-10-20T14:48:58.596+0000] {subprocess.py:93} INFO - A Requisição de nº 5 coletou 50 Pokemons
+[2023-10-20T14:48:58.596+0000] {subprocess.py:93} INFO - A Requisição de nº 6 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 7 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 8 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 9 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 10 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 11 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 12 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 13 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 14 coletou 50 Pokemons
+[2023-10-20T14:48:58.597+0000] {subprocess.py:93} INFO - A Requisição de nº 15 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 16 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 17 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 18 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 19 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 20 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 21 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 22 coletou 50 Pokemons
+[2023-10-20T14:48:58.598+0000] {subprocess.py:93} INFO - A Requisição de nº 23 coletou 50 Pokemons
+[2023-10-20T14:48:58.599+0000] {subprocess.py:93} INFO - A Requisição de nº 24 coletou 50 Pokemons
+[2023-10-20T14:48:58.599+0000] {subprocess.py:93} INFO - A Requisição de nº 25 coletou 50 Pokemons
+[2023-10-20T14:48:58.599+0000] {subprocess.py:93} INFO - A Requisição de nº 26 coletou 42 Pokemons
+[2023-10-20T14:48:58.599+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T14:48:58.599+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/pokelist.py", line 41, in <module>
+[2023-10-20T14:48:58.599+0000] {subprocess.py:93} INFO -     df_pokes = ss.read.json(df_pokes)
+[2023-10-20T14:48:58.599+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/pyspark/sql/session.py", line 1706, in read
+[2023-10-20T14:48:58.600+0000] {subprocess.py:93} INFO -     return DataFrameReader(self)
+[2023-10-20T14:48:58.600+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/pyspark/sql/readwriter.py", line 70, in __init__
+[2023-10-20T14:48:58.600+0000] {subprocess.py:93} INFO -     self._jreader = spark._jsparkSession.read()
+[2023-10-20T14:48:58.600+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/py4j/java_gateway.py", line 1322, in __call__
+[2023-10-20T14:48:58.600+0000] {subprocess.py:93} INFO -     return_value = get_return_value(
+[2023-10-20T14:48:58.601+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+[2023-10-20T14:48:58.601+0000] {subprocess.py:93} INFO -     return f(*a, **kw)
+[2023-10-20T14:48:58.601+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/py4j/protocol.py", line 334, in get_return_value
+[2023-10-20T14:48:58.601+0000] {subprocess.py:93} INFO -     raise Py4JError(
+[2023-10-20T14:48:58.601+0000] {subprocess.py:93} INFO - py4j.protocol.Py4JError: An error occurred while calling o23.read
+[2023-10-20T14:48:59.037+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-10-20T14:48:59.089+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-10-20T14:48:59.159+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=simple, task_id=pokelist, execution_date=20231020T144635, start_date=20231020T144638, end_date=20231020T144859
+[2023-10-20T14:48:59.270+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 64 for task pokelist (Bash command failed. The command returned a non-zero exit code 1.; 2595)
+[2023-10-20T14:48:59.369+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-20T14:48:59.462+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

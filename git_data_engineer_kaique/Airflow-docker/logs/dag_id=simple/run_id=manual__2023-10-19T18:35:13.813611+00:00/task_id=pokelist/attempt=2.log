@@ -1,0 +1,26 @@
+[2023-10-19T18:40:17.816+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-19T18:35:13.813611+00:00 [queued]>
+[2023-10-19T18:40:17.824+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-19T18:35:13.813611+00:00 [queued]>
+[2023-10-19T18:40:17.824+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-10-19T18:40:17.839+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): pokelist> on 2023-10-19 18:35:13.813611+00:00
+[2023-10-19T18:40:17.850+0000] {standard_task_runner.py:57} INFO - Started process 174 to run task
+[2023-10-19T18:40:17.854+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'simple', 'pokelist', 'manual__2023-10-19T18:35:13.813611+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/pokelist.py', '--cfg-path', '/tmp/tmpe3fb5zdc']
+[2023-10-19T18:40:17.858+0000] {standard_task_runner.py:85} INFO - Job 37: Subtask pokelist
+[2023-10-19T18:40:17.917+0000] {task_command.py:416} INFO - Running <TaskInstance: simple.pokelist manual__2023-10-19T18:35:13.813611+00:00 [running]> on host f04a086795a0
+[2023-10-19T18:40:18.012+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@***.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple' AIRFLOW_CTX_TASK_ID='pokelist' AIRFLOW_CTX_EXECUTION_DATE='2023-10-19T18:35:13.813611+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-19T18:35:13.813611+00:00'
+[2023-10-19T18:40:18.015+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-10-19T18:40:18.015+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python3 /opt/***/scripts/pokelist.py']
+[2023-10-19T18:40:18.029+0000] {subprocess.py:86} INFO - Output:
+[2023-10-19T18:40:18.141+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-19T18:40:18.142+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/pokelist.py", line 1, in <module>
+[2023-10-19T18:40:18.142+0000] {subprocess.py:93} INFO -     import findspark
+[2023-10-19T18:40:18.143+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'findspark'
+[2023-10-19T18:40:18.145+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-10-19T18:40:18.165+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-10-19T18:40:18.171+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=simple, task_id=pokelist, execution_date=20231019T183513, start_date=20231019T184017, end_date=20231019T184018
+[2023-10-19T18:40:18.184+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 37 for task pokelist (Bash command failed. The command returned a non-zero exit code 1.; 174)
+[2023-10-19T18:40:18.227+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-19T18:40:18.257+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

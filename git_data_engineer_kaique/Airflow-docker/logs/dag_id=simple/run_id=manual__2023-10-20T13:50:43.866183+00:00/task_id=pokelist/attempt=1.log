@@ -1,0 +1,91 @@
+[2023-10-20T13:50:47.573+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-20T13:50:43.866183+00:00 [queued]>
+[2023-10-20T13:50:47.583+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple.pokelist manual__2023-10-20T13:50:43.866183+00:00 [queued]>
+[2023-10-20T13:50:47.583+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-10-20T13:50:47.596+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): pokelist> on 2023-10-20 13:50:43.866183+00:00
+[2023-10-20T13:50:47.605+0000] {standard_task_runner.py:57} INFO - Started process 62 to run task
+[2023-10-20T13:50:47.612+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'simple', 'pokelist', 'manual__2023-10-20T13:50:43.866183+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/pokelist.py', '--cfg-path', '/tmp/tmpsrhhk3as']
+[2023-10-20T13:50:47.617+0000] {standard_task_runner.py:85} INFO - Job 51: Subtask pokelist
+[2023-10-20T13:50:47.680+0000] {task_command.py:416} INFO - Running <TaskInstance: simple.pokelist manual__2023-10-20T13:50:43.866183+00:00 [running]> on host 4662b0d5ca37
+[2023-10-20T13:50:47.766+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@***.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple' AIRFLOW_CTX_TASK_ID='pokelist' AIRFLOW_CTX_EXECUTION_DATE='2023-10-20T13:50:43.866183+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-20T13:50:43.866183+00:00'
+[2023-10-20T13:50:47.768+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-10-20T13:50:47.769+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python3 /opt/***/scripts/pokelist.py']
+[2023-10-20T13:50:47.790+0000] {subprocess.py:86} INFO - Output:
+[2023-10-20T13:50:48.624+0000] {subprocess.py:93} INFO - /home/***/.local/lib/python3.9/site-packages/pyspark/bin/load-spark-env.sh: line 68: ps: command not found
+[2023-10-20T13:50:50.602+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2023-10-20T13:50:50.603+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2023-10-20T13:50:50.890+0000] {subprocess.py:93} INFO - 23/10/20 13:50:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2023-10-20T13:52:25.726+0000] {subprocess.py:93} INFO - [Stage 0:>                                                          (0 + 4) / 4]                                                                                A Requisição de nº 1 coletou 50 Pokemons
+[2023-10-20T13:52:25.728+0000] {subprocess.py:93} INFO - A Requisição de nº 2 coletou 50 Pokemons
+[2023-10-20T13:52:25.729+0000] {subprocess.py:93} INFO - A Requisição de nº 3 coletou 50 Pokemons
+[2023-10-20T13:52:25.729+0000] {subprocess.py:93} INFO - A Requisição de nº 4 coletou 50 Pokemons
+[2023-10-20T13:52:25.729+0000] {subprocess.py:93} INFO - A Requisição de nº 5 coletou 50 Pokemons
+[2023-10-20T13:52:25.729+0000] {subprocess.py:93} INFO - A Requisição de nº 6 coletou 50 Pokemons
+[2023-10-20T13:52:25.730+0000] {subprocess.py:93} INFO - A Requisição de nº 7 coletou 50 Pokemons
+[2023-10-20T13:52:25.730+0000] {subprocess.py:93} INFO - A Requisição de nº 8 coletou 50 Pokemons
+[2023-10-20T13:52:25.730+0000] {subprocess.py:93} INFO - A Requisição de nº 9 coletou 50 Pokemons
+[2023-10-20T13:52:25.731+0000] {subprocess.py:93} INFO - A Requisição de nº 10 coletou 50 Pokemons
+[2023-10-20T13:52:25.731+0000] {subprocess.py:93} INFO - A Requisição de nº 11 coletou 50 Pokemons
+[2023-10-20T13:52:25.731+0000] {subprocess.py:93} INFO - A Requisição de nº 12 coletou 50 Pokemons
+[2023-10-20T13:52:25.731+0000] {subprocess.py:93} INFO - A Requisição de nº 13 coletou 50 Pokemons
+[2023-10-20T13:52:25.731+0000] {subprocess.py:93} INFO - A Requisição de nº 14 coletou 50 Pokemons
+[2023-10-20T13:52:25.732+0000] {subprocess.py:93} INFO - A Requisição de nº 15 coletou 50 Pokemons
+[2023-10-20T13:52:25.732+0000] {subprocess.py:93} INFO - A Requisição de nº 16 coletou 50 Pokemons
+[2023-10-20T13:52:25.732+0000] {subprocess.py:93} INFO - A Requisição de nº 17 coletou 50 Pokemons
+[2023-10-20T13:52:25.732+0000] {subprocess.py:93} INFO - A Requisição de nº 18 coletou 50 Pokemons
+[2023-10-20T13:52:25.732+0000] {subprocess.py:93} INFO - A Requisição de nº 19 coletou 50 Pokemons
+[2023-10-20T13:52:25.732+0000] {subprocess.py:93} INFO - A Requisição de nº 20 coletou 50 Pokemons
+[2023-10-20T13:52:25.733+0000] {subprocess.py:93} INFO - A Requisição de nº 21 coletou 50 Pokemons
+[2023-10-20T13:52:25.733+0000] {subprocess.py:93} INFO - A Requisição de nº 22 coletou 50 Pokemons
+[2023-10-20T13:52:25.733+0000] {subprocess.py:93} INFO - A Requisição de nº 23 coletou 50 Pokemons
+[2023-10-20T13:52:25.733+0000] {subprocess.py:93} INFO - A Requisição de nº 24 coletou 50 Pokemons
+[2023-10-20T13:52:25.733+0000] {subprocess.py:93} INFO - A Requisição de nº 25 coletou 50 Pokemons
+[2023-10-20T13:52:25.733+0000] {subprocess.py:93} INFO - A Requisição de nº 26 coletou 42 Pokemons
+[2023-10-20T13:52:25.735+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2023-10-20T13:52:25.735+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/pokelist.py", line 50, in <module>
+[2023-10-20T13:52:25.736+0000] {subprocess.py:93} INFO -     df_pokes.write.parquet(
+[2023-10-20T13:52:25.736+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/pyspark/sql/readwriter.py", line 1721, in parquet
+[2023-10-20T13:52:25.736+0000] {subprocess.py:93} INFO -     self._jwrite.parquet(path)
+[2023-10-20T13:52:25.736+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/py4j/java_gateway.py", line 1322, in __call__
+[2023-10-20T13:52:25.737+0000] {subprocess.py:93} INFO -     return_value = get_return_value(
+[2023-10-20T13:52:25.737+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+[2023-10-20T13:52:25.737+0000] {subprocess.py:93} INFO -     return f(*a, **kw)
+[2023-10-20T13:52:25.737+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.9/site-packages/py4j/protocol.py", line 326, in get_return_value
+[2023-10-20T13:52:25.737+0000] {subprocess.py:93} INFO -     raise Py4JJavaError(
+[2023-10-20T13:52:25.738+0000] {subprocess.py:93} INFO - py4j.protocol.Py4JJavaError: An error occurred while calling o62.parquet.
+[2023-10-20T13:52:25.739+0000] {subprocess.py:93} INFO - : org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "C"
+[2023-10-20T13:52:25.739+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+[2023-10-20T13:52:25.739+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+[2023-10-20T13:52:25.739+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+[2023-10-20T13:52:25.739+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+[2023-10-20T13:52:25.739+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+[2023-10-20T13:52:25.740+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+[2023-10-20T13:52:25.740+0000] {subprocess.py:93} INFO - 	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+[2023-10-20T13:52:25.740+0000] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource.planForWritingFileFormat(DataSource.scala:454)
+[2023-10-20T13:52:25.740+0000] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource.planForWriting(DataSource.scala:530)
+[2023-10-20T13:52:25.740+0000] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+[2023-10-20T13:52:25.740+0000] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+[2023-10-20T13:52:25.740+0000] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:240)
+[2023-10-20T13:52:25.741+0000] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:792)
+[2023-10-20T13:52:25.741+0000] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2023-10-20T13:52:25.741+0000] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2023-10-20T13:52:25.741+0000] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2023-10-20T13:52:25.741+0000] {subprocess.py:93} INFO - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[2023-10-20T13:52:25.741+0000] {subprocess.py:93} INFO - 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2023-10-20T13:52:25.741+0000] {subprocess.py:93} INFO - 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2023-10-20T13:52:25.742+0000] {subprocess.py:93} INFO - 	at py4j.Gateway.invoke(Gateway.java:282)
+[2023-10-20T13:52:25.742+0000] {subprocess.py:93} INFO - 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2023-10-20T13:52:25.742+0000] {subprocess.py:93} INFO - 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2023-10-20T13:52:25.742+0000] {subprocess.py:93} INFO - 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2023-10-20T13:52:25.742+0000] {subprocess.py:93} INFO - 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2023-10-20T13:52:25.742+0000] {subprocess.py:93} INFO - 	at java.base/java.lang.Thread.run(Thread.java:829)
+[2023-10-20T13:52:25.742+0000] {subprocess.py:93} INFO - 
+[2023-10-20T13:52:26.351+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-10-20T13:52:26.379+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-10-20T13:52:26.385+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=simple, task_id=pokelist, execution_date=20231020T135043, start_date=20231020T135047, end_date=20231020T135226
+[2023-10-20T13:52:26.406+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 51 for task pokelist (Bash command failed. The command returned a non-zero exit code 1.; 62)
+[2023-10-20T13:52:26.432+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-20T13:52:26.459+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
